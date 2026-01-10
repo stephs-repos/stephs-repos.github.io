@@ -1,0 +1,66 @@
+# Jekyll Configuration for GitHub Pages
+# Rename this to _config.yml to use
+
+title: My Blog
+description: >-
+  A personal blog about technology, ideas, and creative pursuits.
+author: Your Name
+email: you@example.com
+url: "https://yourusername.github.io"
+baseurl: "" # Leave empty for user/org pages, or "/repo-name" for project pages
+
+# GitHub Pages theme (choose one)
+# See: https://pages.github.com/themes/
+theme: minima
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    default_lang: plaintext
+
+# Plugins (GitHub Pages supported)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude from build
+exclude:
+  - .devcontainer
+  - .markdownlint.json
+  - .prettierrc
+  - README.md
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Collections (for organizing content)
+collections:
+  drafts:
+    output: false
+
+# Pagination
+paginate: 10
+paginate_path: "/page/:num/"
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Your Name"
+      comments: true
+
+# Social links (for minima theme)
+minima:
+  social_links:
+    - { platform: github, user_url: "https://github.com/yourusername" }
+    - { platform: twitter, user_url: "https://twitter.com/yourusername" }

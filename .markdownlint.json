@@ -1,0 +1,28 @@
+{
+  "default": true,
+  "MD013": false,
+  "MD033": {
+    "allowed_elements": [
+      "details",
+      "summary",
+      "img",
+      "video",
+      "source",
+      "picture",
+      "figure",
+      "figcaption",
+      "iframe",
+      "br",
+      "sup",
+      "sub",
+      "kbd"
+    ]
+  },
+  "MD041": false,
+  "MD024": {
+    "siblings_only": true
+  },
+  "MD029": {
+    "style": "ordered"
+  }
+}
