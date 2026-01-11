@@ -12,10 +12,6 @@ The more important shift is how AI can be used to deliver services more effectiv
 
 > AI appears to be the first real innovation that changes the economics of tackling legacy debt since, well, *never*, that holds some hope of breaking some old, long-established barriers.
 
-
----
-
-
 ## What is Agentic Coding?
 
 By AI, I'm not referring to the now ubiquitous and well-adopted code completion tools that help developers write code more quickly. I'm talking about **agentic coding**, where the tool can take a goal, navigate a codebase, order your coffee, make changes across multiple files, run tests, fix what breaks, and keep going.
@@ -34,10 +30,6 @@ Examples include:
 - GitHub Copilot Agent
 
 They become noticeably more capable every week. If you've never seen it used in a real project, it's easy to assume it's just a slightly better version of what we already had. It isn't. **It changes the economics of delivery** in a way that has profound downstream effects on planning, risk, and outcomes.
-
-
----
-
 
 ## The Momentum Advantage
 
@@ -58,10 +50,6 @@ With agentic coding, the cost of learning from feature experiments becomes cheap
 > Rather than waiting days to see changes, you can sometimes get down to minutes.
 
 That changes behaviour. It makes it easier to test assumptions early, before they harden into commitments, and it shortens the gap between "we should improve this" and "here's a working version we can evaluate."
-
-
----
-
 
 ## Finally Tackling Technical Debt
 
@@ -89,10 +77,6 @@ Agentic tools, used well, can help build that understanding faster by:
 
 It doesn't eliminate risk, but it can **reduce the cost of doing the right thing**, which is often what makes modernization possible in the first place.
 
-
----
-
-
 ## The Public Sector Reality
 
 Public sector technology problems are rarely greenfield. More typically, delivery happens in the shadow of:
@@ -105,10 +89,6 @@ Public sector technology problems are rarely greenfield. More typically, deliver
 In that world, the ability to move quickly isn't about shipping more features for the sake of it. It's about **reducing uncertainty and turning unknowns into knowns** before you have spent your political capital, your budget, and your calendar.
 
 It's also about creating space for the kind of careful, incremental modernization that everyone agrees is necessary but rarely has enough oxygen.
-
-
----
-
 
 ## The Value of Your Experienced People
 
@@ -137,10 +117,6 @@ They know how to ask the right questions that bridge the tech to business outcom
 
 > In other words, they keep the AI from turning your code base into an episode of *This Old House*.
 
-
----
-
-
 ## Choosing the Right Vendors
 
 Rare or lucky are the few who have managed to retain these in-house experts over the years. For those who haven't, there is, of course, the software delivery vendor ecosystem.
@@ -150,10 +126,6 @@ You need to think of them as **the commodity-level resource that they are**. The
 Find the nimble ones who have already adapted to the agentic coding era and can demonstrably prove it. It's not a stretch to partially score RFP respondents on their ability to generate a prototype implementation of some feature subset in real time, right before your eyes.
 
 Their bench needs to consist of **experienced talent, not junior developers**. They should be able to deliver faster, and you should be able to conserve budget.
-
-
----
-
 
 ## A Reality Check
 
@@ -177,7 +149,7 @@ These types of issues become more common as the code base grows or has a prolife
 There are techniques you need to learn for interacting with it that go beyond just prompt engineering:
 
 - Leveraging agent skills
-- Agent memory files (CLAUDE.md, AGENTS.md)
+- Agent memory files
 - Task decomposition
 - Checkpointing
 - Knowing when to reset context
@@ -186,10 +158,6 @@ There are techniques you need to learn for interacting with it that go beyond ju
 The tool can generate a lot, but it can also generate confusion if nobody is steering.
 
 *But that's as of 9 o'clock this morning, and at the current rate of evolution, I'd be surprised if a lot of these limitations still exist in six months.*
-
-
----
-
 
 ## The Real Leadership Question
 
@@ -203,7 +171,5 @@ The better question is whether we use that speed to create **outcomes that have 
 - A realistic path to shrinking technical debt instead of just managing it
 
 If we get that right, the impact isn't just an IT story. It's a **service delivery story**: fewer outages, less time lost to brittle processes, more resilient systems, and more capacity to improve the citizen experience without needing everything to be rewritten from scratch.
-
----
 
 **Software delivery is fun again.**

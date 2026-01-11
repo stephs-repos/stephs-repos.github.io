@@ -1,0 +1,78 @@
+---
+---
+
+@import "minima";
+
+// Custom styles for blog posts
+
+.post-content {
+  font-size: 1.25rem; // ~20px
+  // Add more spacing around section dividers
+  hr {
+    margin: 3rem auto;
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    width: 60%;
+  }
+
+  // Improve blockquote styling
+  blockquote {
+    border-left: 4px solid #6b7280;
+    background: #f3f4f6;
+    padding: 1rem 1.5rem;
+    margin: 2rem 0;
+    border-radius: 0 8px 8px 0;
+
+    p {
+      margin: 0;
+      font-style: italic;
+      color: #374151;
+    }
+  }
+
+  // Better figure/image styling
+  figure {
+    margin: 2.5rem 0;
+
+    img {
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+
+    figcaption {
+      margin-top: 0.75rem;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+  }
+
+  // Improve list styling
+  ul, ol {
+    margin: 1.5rem 0;
+    padding-left: 2rem;
+
+    li {
+      margin-bottom: 0.5rem;
+      line-height: 1.7;
+    }
+  }
+
+  // Section headers
+  h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e5e7eb;
+  }
+
+  // Paragraph spacing
+  p {
+    margin-bottom: 1.25rem;
+    line-height: 1.8;
+  }
+
+  // Bold text emphasis
+  strong {
+    color: #1f2937;
+  }
+}
