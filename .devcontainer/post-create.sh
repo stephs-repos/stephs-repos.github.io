@@ -30,6 +30,10 @@ npm install -g @anthropic-ai/claude-code
 # Jekyll (GitHub Pages native static site generator)
 # ─────────────────────────────────────────────────────────────
 echo "💎 Installing Jekyll and GitHub Pages gems..."
+
+# Remove sass-embedded if present to avoid conflict with github-pages' sass dependency
+gem uninstall sass-embedded --force --executables 2>/dev/null || true
+
 gem install bundler jekyll github-pages webrick
 
 # ─────────────────────────────────────────────────────────────
