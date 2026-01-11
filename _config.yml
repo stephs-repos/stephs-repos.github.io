@@ -1,7 +1,7 @@
 # Jekyll Configuration for GitHub Pages
 
 title: Steph's Blog
-author: Steph
+author: Steph Swierenga
 url: 'https://stephs-repos.github.io'
 baseurl: '' # Empty for user/org root pages
 
@@ -49,7 +49,7 @@ defaults:
       type: 'posts'
     values:
       layout: 'post'
-      author: 'Steph'
+      author: 'Steph Swierenga'
 
 # Social links (for minima theme)
 minima:
