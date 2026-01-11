@@ -5,8 +5,8 @@ description: >-
   A personal blog about technology, ideas, and creative pursuits.
 author: Steph
 email: steph@example.com
-url: "https://stephs.github.io"
-baseurl: "" # Leave empty for user/org pages
+url: "https://stephs-repos.github.io"
+baseurl: "/stephs.github.io" # Repo name for project pages
 
 # GitHub Pages theme
 theme: minima
