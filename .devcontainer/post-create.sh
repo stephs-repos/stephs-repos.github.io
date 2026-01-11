@@ -31,10 +31,8 @@ npm install -g @anthropic-ai/claude-code
 # ─────────────────────────────────────────────────────────────
 echo "💎 Installing Jekyll and GitHub Pages gems..."
 
-# Remove sass-embedded if present to avoid conflict with github-pages' sass dependency
-gem uninstall sass-embedded --force --executables 2>/dev/null || true
-
-gem install bundler jekyll github-pages webrick
+# Install bundler first (jekyll will come from github-pages via bundle install)
+gem install bundler
 
 # ─────────────────────────────────────────────────────────────
 # Markdown authoring tools
@@ -53,7 +51,8 @@ echo "🖼️  Installing image tools..."
 sudo apt-get update && sudo apt-get install -y \
   imagemagick \
   webp \
-  optipng
+  optipng \
+  cmake
 
 # ─────────────────────────────────────────────────────────────
 # Initialize Jekyll if no Gemfile exists
@@ -65,7 +64,8 @@ fi
 # Install Ruby dependencies if Gemfile exists
 if [ -f "Gemfile" ]; then
   echo "📦 Installing Ruby dependencies..."
-  bundle install
+  # Use single-threaded make to avoid race conditions in native extension builds
+  MAKE="make -j1" bundle install
 fi
 
 echo ""
