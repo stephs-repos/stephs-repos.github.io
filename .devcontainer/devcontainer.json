@@ -10,6 +10,7 @@
   },
 
   "initializeCommand": "bash -c 'mkdir -p ~/.anthropic ~/.claude ~/.config/gh ~/.ssh ~/.gnupg && touch ~/.claude.json 2>/dev/null || true'",
+  "onCreateCommand": "ln -sf ~/.claude/config.json ~/.claude.json",
   "postCreateCommand": "bash .devcontainer/post-create.sh",
 
   "customizations": {
@@ -63,12 +64,12 @@
   "mounts": [
     "source=${localEnv:HOME}/.gnupg,target=/home/node/.gnupg,type=bind,consistency=cached",
 
-    "source=${localEnv:HOME}/.gitconfig,target=/home/vscode/.gitconfig,type=bind",
-    "source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind",
+    "source=${localEnv:HOME}/.gitconfig,target=/home/node/.gitconfig,type=bind",
+    "source=${localEnv:HOME}/.ssh,target=/home/node/.ssh,type=bind",
     "source=${localEnv:HOME}/.cache,target=${containerWorkspaceFolder}/.cache,type=bind",
-    "source=${localEnv:HOME}/.claude,target=/home/vscode/.claude,type=bind,consistency=cached",
-    "source=${localEnv:HOME}/.config/gh,target=/home/vscode/.config/gh,type=bind,consistency=cached",
-    "source=${localEnv:HOME}/.anthropic,target=/home/vscode/.anthropic,type=bind,consistency=cached"
+    "source=${localEnv:HOME}/.claude,target=/home/node/.claude,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/.config/gh,target=/home/node/.config/gh,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/.anthropic,target=/home/node/.anthropic,type=bind,consistency=cached"
   ],
 
   "remoteUser": "node"
