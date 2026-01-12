@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Agentic Coding: Changing the Economics of Government Modernization"
+title: "Agentic Coding: Changing the Economics of Software Delivery"
 date: 2026-01-11
 categories: [technology, public-sector]
 tags: [ai, agentic-coding, modernization, technical-debt]
